@@ -1,0 +1,105 @@
+a{
+    text-decoration: none;
+    color: #f2f2f2 !important;
+}
+.layout hr{
+    margin: 20px 5px 20px 5px;
+    border: none;
+    height: 1.5px;
+    background: #f2f2f2;
+}
+.layout{
+    text-align: center;
+    padding: 30px 60px 30px 120px;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+.layout-highlight,.layout-highlight a{
+    color: #f2f2f2;
+    font-size: 80px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    animation: textfloat 6s ease-in-out infinite;
+}
+.layout-highlight img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateY(35%);
+    margin-top: -10%;
+}
+.layout-box{
+    padding-top: 5%;
+}
+.layout-haeder{
+    font-size: 20px;
+    padding: 5px;
+    background: linear-gradient(#7bc653,#3c562e);
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    box-shadow: 0px 1px 0px 0px #fff;
+}
+.layout-content{
+    min-height: 100%;
+    padding: 20px 5px 20px 5px;
+    background: linear-gradient(rgba(255, 255, 255, 0),#2c375b);
+}
+.layout-footer{
+    padding: 5px;
+    background: linear-gradient(#547482,#2c375b);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.layout input[type='email'],.layout input[type='password'],.layout input[type='text'],.layout textarea,.layout select,.layout input[type='file']{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.layout textarea{
+    min-height: 150px;
+}
+.layout input[type='submit'],.submit{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#7bc653,#3c562e);
+    color: #f2f2f2;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0px #000;
+    transition: 0.3s;
+}
+.layout input[type='submit']:hover,.hover{
+    transform: translateY(1px);
+    box-shadow: none;
+}
+@media only screen and (max-width:1080px) {
+    .layout{
+        padding: 30px !important;
+    }
+    .layout-highlight,.layout-highlight a{
+        font-size: 40px;
+        margin-bottom: 10%;
+    }
+    .layout input{
+        width: auto;
+    }
+    .layout-highlight img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translateY(35%);
+    }
+}
+@keyframes textfloat {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

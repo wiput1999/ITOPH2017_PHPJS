@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Getting started</title>
+<meta name="description" content="Super Simple WYSIWYG Editor on Bootstrap Summernote is a JavaScript library that helps you create WYSIWYG editors online.
+">
+<meta name="author" content="https://github.com/summernote">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<link rel="apple-touch-icon" sizes="57x57" href="/img/icons/icon_ios_57x57.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/icons/icon_ios_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/icons/icon_ios_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/icons/icon_ios_152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/icon_ios_180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icons/android_icon_192x192.png">
+<meta property="og:site_name" content="Summernote - Super Simple WYSIWYG editor">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Summernote - Super Simple WYSIWYG editor">
+<meta property="og:url" content="http://localhost:4000/getting-started/">
+<meta property="og:image" content="/img/icons/1200x630.png">
+<meta property="og:description" content="Super Simple WYSIWYG Editor on Bootstrap Summernote is a JavaScript library that helps you create WYSIWYG editors online.
+">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="http://localhost:4000/getting-started/">
+<meta name="twitter:title" content="Summernote - Super Simple WYSIWYG editor">
+<meta name="twitter:description" content="Super Simple WYSIWYG Editor on Bootstrap Summernote is a JavaScript library that helps you create WYSIWYG editors online.
+">
+<meta name="twitter:image" content="/img/icons/icon_200x200.png">
+<meta name="twitter:site" content="@hackerwins">
+<meta name="twitter:domain" content="http://summernote.org/">
+
+<link rel="canonical" href="http://localhost:4000/getting-started/">
+<link rel="alternate" type="application/rss+xml" title="Summernote - Super Simple WYSIWYG editor" href="http://localhost:4000/feed.xml" />
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+
+<!-- jquery, bootstrap -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<!-- codemirror: todo: extract codemirror to bower -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.min.js"></script>
+
+<!-- add summernote -->
+<link href="/bower_components/summernote/dist/summernote.css" rel="stylesheet">
+<script src="/bower_components/summernote/dist/summernote.js"></script>
+<script src="/bower_components/summernote/lang/summernote-ko-KR.js"></script>
+
+<!-- for website -->
+<script src="/js/toc.js"></script>
+<script src="/js/sidebar.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-42438082-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body class="doc">
+    <header class="navbar navbar-default navbar-fixed-top fix-navbar" role="navigation">
+  <div class="page-container header-page-container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand fix-header-brand header-bi" href="/"><span class="ir">summernote</span></a>
+      <a href="https://github.com/summernote/summernote/archive/master.zip" id="download">
+        <span class="img-mobile-download"></span>
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+          
+          <li><a class="header-page-link" href="/getting-started/">Getting started</a></li>
+          
+        
+          
+          <li><a class="header-page-link" href="/deep-dive/">Deep dive</a></li>
+          
+        
+          
+          <li><a class="header-page-link" href="/examples/">Examples</a></li>
+          
+        
+          
+          <li><a class="header-page-link" href="/team/">Team</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right header-social">
+        <li><a href="https://twitter.com/intent/tweet?button_hashtag=summernote" class="twitter">#summernote</a></li>
+        <li><a href="https://github.com/summernote/summernote/" class="github">0,000</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    
+    <div class="page-container">
+  <div class="row">
+    <div class="col-md-3 doc-nav">
+      <h2>Getting started</h2>
+      <p class="muted">An overview of summernote, how to download and use, basic features and examples, and more.</p>
+      <div class="bs-page-sidebar" side-navbar role="complementary">
+        <div id="toc"></div>
+      </div>
+    </div>
+    <div class="col-md-9 doc-content-wrap">
+      <div class="doc-content" role="main">
+        <h2 id="get-summernote">Get summernote</h2>
+
+<h3 id="compiled-css-js">Compiled CSS, JS</h3>
+
+<p>The fastest way to get Summernote is to download the precompiled and minified versions of our CSS, JavaScript. No documentation or original source code files are included.</p>
+
+<p><a href="https://github.com/summernote/summernote/releases/download/v0.8.7/summernote-0.8.7-dist.zip" class="btn-important ">Download compiled</a></p>
+
+<h3 id="download-source-code">Download source code</h3>
+<p>Get the latest Summernote LESS and Javascript source code by downloading it directly from GitHub.
+<a href="https://github.com/summernote/summernote/archive/master.zip">Download</a></p>
+
+<h3 id="clone-or-fork-via-github">Clone or fork via Github</h3>
+<p>Visit us on GitHub to clone or fork the summernote project.
+<a href="https://github.com/summernote/summernote">project</a></p>
+
+<h3 id="install-with-bower">Install with Bower</h3>
+<p>Install and manage Summernote’s styles, JavaScript, and documentation using Bower.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bower install summernote</code></pre></figure>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="requires-html5-doctype">Requires HTML5 doctype</h3>
+
+<p>Bootstrap uses certain HTML elements and CSS properties which require HTML5 doctype. Include <code>&lt;!DOCTYPE html&gt;</code> in the beginning of all your projects.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h3 id="include-jscss">Include js/css</h3>
+
+<p>Summernote uses open source libraries(jQuery, Bootstrap).
+Include the Following code in your HTML <code>&lt;HTML&gt;</code> tag</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- include libraries(jQuery, bootstrap) --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+
+<span class="c">&lt;!-- include summernote css/js--&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.7/summernote.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.7/summernote.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p>Don’t forget to change the file’s path if you downloaded summernote in a different folders.</p>
+
+<blockquote>
+  <h5 id="fontawesome-dependancy">Fontawesome dependancy</h5>
+  <p>After v0.8.0, You don’t have to include fontawesome for displaying summernote’s icon. But You can still use fontawesome for your custom icon. For more detail, please visit to <a href="/deep-dive/#custom-button">custom button</a> section.</p>
+</blockquote>
+
+<h3 id="insert">Insert</h3>
+
+<p>Add <code>div</code> into <code>body</code>; this targeted element will later be rendered to summernote editing tool.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"summernote"</span><span class="nt">&gt;</span>Hello Summernote<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="run-summernote">Run summernote</h3>
+<p>Run the script below when document is ready!</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">();</span>
+<span class="p">});</span></code></pre></figure>
+
+<h3 id="simple-example">Simple example</h3>
+
+<p>You can also test running example. Save below code as <code class="highlighter-rouge">index.html</code> and open it with your browser.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Summernote<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.7/summernote.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.7/summernote.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"summernote"</span><span class="nt">&gt;&lt;p&gt;</span>Hello Summernote<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">();</span>
+    <span class="p">});</span>
+  <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<hr />
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- ad-doc -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4799203991210529" data-ad-slot="4174898290" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<hr />
+
+<h2 id="basic-api">Basic API</h2>
+
+<p>Initialize Summernote</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">();</span></code></pre></figure>
+
+<p>Initialize Summernote with options</p>
+
+<h3 id="height-and-focus">Height and Focus</h3>
+<p>If you set focus option, cursor will focus editable area after initialize summernote.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">({</span>
+  <span class="na">height</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>                 <span class="c1">// set editor height</span>
+  <span class="na">minHeight</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>             <span class="c1">// set minimum height of editor</span>
+  <span class="na">maxHeight</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>             <span class="c1">// set maximum height of editor</span>
+  <span class="na">focus</span><span class="p">:</span> <span class="kc">true</span>                  <span class="c1">// set focus to editable area after initializing summernote</span>
+<span class="p">});</span></code></pre></figure>
+
+<p>If you set height, you can see resizebar below.</p>
+
+<div class="height"><p>blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~<br />blah blah~</p></div>
+<script>
+  $(function() {
+    $('.height').summernote({height: 150});
+  });
+</script>
+
+<p>If you don’t set the height, editable area’s height will change according to contents.</p>
+
+<div class="noheight"><p>press enter key.</p></div>
+<script>
+  $(function() {
+    $('.noheight').summernote();
+  });
+</script>
+
+<h3 id="destroy">Destroy</h3>
+
+<p>Destroy Summernote.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">(</span><span class="s1">'destroy'</span><span class="p">);</span></code></pre></figure>
+
+<h3 id="get--set-code">get &amp; set Code</h3>
+
+<p>Get the HTML contents of the first summernote in the set of matched elements.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">markupStr</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">(</span><span class="s1">'code'</span><span class="p">);</span></code></pre></figure>
+
+<p>If you initialize multiple editor, You can get the HTML content of the second summernote with jQuery <a href="http://api.jquery.com/eq/">eq</a>.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">markupStr</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'.summernote'</span><span class="p">).</span><span class="nx">eq</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="nx">summernote</span><span class="p">(</span><span class="s1">'code'</span><span class="p">);</span></code></pre></figure>
+
+<p>A string of HTML to set as the content of each matched element.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">markupStr</span> <span class="o">=</span> <span class="s1">'hello world'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">(</span><span class="s1">'code'</span><span class="p">,</span> <span class="nx">markupStr</span><span class="p">);</span></code></pre></figure>
+
+<p>for more detail api: <a href="/deep-dive/#api">deep dive with api</a></p>
+
+<blockquote>
+  <h5 id="destroy-and-code">destroy and code</h5>
+  <p>After v0.7.0, direct jquery methods, <code class="highlighter-rouge">destroy</code> and <code class="highlighter-rouge">code</code> were removed for avoiding conflict with other jquery libraries. You can call this methods with summernote api.</p>
+</blockquote>
+
+<hr />
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- ad-doc -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4799203991210529" data-ad-slot="4174898290" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<hr />
+
+<h2 id="i18n-support">i18n support</h2>
+
+<h3 id="language">Language</h3>
+
+<p>Include libraries with lang file. eg) <code>summernote-ko-KR.js</code></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span> 
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"summernote.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"summernote.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- include summernote-ko-KR --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lang/summernote-ko-KR.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p>Run the script with locale option.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">({</span>
+    <span class="na">lang</span><span class="p">:</span> <span class="s1">'ko-KR'</span> <span class="c1">// default: 'en-US'</span>
+  <span class="p">});</span>
+<span class="p">});</span></code></pre></figure>
+
+<div class="lang"></div>
+<script>
+  $(document).ready(function() {
+    $('.lang').summernote({
+      lang: 'ko-KR',
+      placeholder: 'move your mouse on toolbar...'
+    });
+  });
+</script>
+
+<p>More summernote languages: <a href="https://github.com/summernote/summernote/tree/master/lang">languages</a></p>
+
+<h2 id="integration">Integration</h2>
+<p>3rd parties available in django, rails, angular and so on.</p>
+
+<h3 id="django">Django</h3>
+<p>Handy update for your django admin page.</p>
+
+<ul>
+  <li><a href="https://github.com/summernote/django-summernote" target="_blank">django-summernote</a></li>
+  <li><a href="https://pypi.python.org/pypi/django-summernote" target="_blank">summernote plugin for Django</a></li>
+</ul>
+
+<h3 id="ruby-on-rails">Ruby On Rails</h3>
+<p>This gem was built to gemify the assets used in Summernote.</p>
+
+<ul>
+  <li><a href="https://github.com/summernote/summernote-rails" target="_blank">summernote-rails</a></li>
+  <li><a href="https://www.youtube.com/watch?v=A3vDRdfEyKs&amp;feature=youtu.be&amp;t=75" target="_blank">how to use summernote on rails</a></li>
+</ul>
+
+<h3 id="angularjs">AngularJS</h3>
+<p>AngularJS directive to Summernote.</p>
+
+<ul>
+  <li><a href="https://github.com/summernote/angular-summernote">angular-summernote</a></li>
+</ul>
+
+<h3 id="apache-wicket">Apache Wicket</h3>
+<p>Summernote widget for Wicket Bootstrap.</p>
+
+<ul>
+  <li><a href="http://wb-mgrigorov.rhcloud.com/summernote" target="_blank">demo</a></li>
+  <li><a href="https://github.com/l0rdn1kk0n/wicket-bootstrap/tree/4f97ca783f7279ca43f9e2ee790703161f59fa40/bootstrap-extensions/src/main/java/de/agilecoders/wicket/extensions/markup/html/bootstrap/editor" target="_blank">source code</a></li>
+</ul>
+
+<h3 id="webpack">Webpack</h3>
+<p>Example about using summernote with webpack.</p>
+
+<ul>
+  <li><a href="https://github.com/hackerwins/summernote-webpack-example" target="_blank">summernote-webpack-example</a></li>
+</ul>
+
+<h3 id="meteor">Meteor</h3>
+<p>Example about using summernote with meteor.</p>
+
+<ul>
+  <li><a href="https://github.com/hackerwins/summernote-meteor-example" target="_blank">summernote-meteor-example</a></li>
+</ul>
+
+      </div>
+      <footer class="doc-footer">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad-doc-footer -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4799203991210529"
+     data-ad-slot="7128364697"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        <hr>
+        <p>
+  Summernote v0.8.7 · Created and Maintained by <a href="https://github.com/summernote">Summernote team</a>.<br>Based on <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://jquery.com">jQuery</a>.<br>Summernote distributed under the MIT license.</p>
+<p><a href="https://github.com/summernote/summernote">GitHub Project</a> · <a href="https://github.com/summernote/summernote/issues">Issues</a></p>
+<script>
+  if (localStorage && localStorage.getItem && localStorage.getItem('github_expire') && localStorage.getItem('github_expire')>(new Date()).getTime()) {
+    $('.github').text((+localStorage.getItem('github_star')).toLocaleString());
+  } else {
+    $.getJSON('https://api.github.com/repos/summernote/summernote',function(d) {
+      if (localStorage && localStorage.setItem) {
+        localStorage.setItem('github_star', d.stargazers_count);
+        localStorage.setItem('github_expire', (new Date()).getTime()+(10*60*1000)/*10 mins*/);
+      }
+      $('.github').text(d.stargazers_count.toLocaleString());
+    }).fail(function() {
+      if (localStorage && localStorage.getItem && localStorage.getItem('github_star')) {
+        $('.github').text(localStorage.getItem('github_star').toLocaleString());
+      }
+    });
+  }
+</script>
+
+      </footer>
+    </div>
+  </div>
+</div>
+<script>
+$(function () {
+  $('#toc').toc();
+  var $sidebar = $('.bs-page-sidebar');
+  var $body = $(document.body);
+  var $navbar = $('.navbar');
+
+  if ($sidebar.length) {
+    $body.scrollspy({
+      target: '.bs-page-sidebar',
+      offset: $navbar.height()
+    });
+
+    $sidebar.affix({
+      offset: {
+        top: function() {
+          var offsetTop = $sidebar.offset().top;
+          var nPadding = 85;
+          return (this.top = offsetTop - nPadding - $navbar.height());
+        }, bottom: function() {
+          return (this.bottom = $('.bs-page-footer').outerHeight(true));
+        }
+      } 
+    });
+  }
+});
+</script>
+
+  </body>
+</html>
